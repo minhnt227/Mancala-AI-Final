@@ -30,6 +30,6 @@ Player 2 is on the bot side and goes second
 
       **FINAL APP**
 
-<img src="https://github.com/minhnt227/Mancala-AI-Final/assets/120069588/95f36547-bae4-4cbd-b05c-cab539ca0483" alt="Logo" width="618" height="546">
+<img src="https://github.com/minhnt227/Mancala-AI-Final/assets/120069588/6de9db05-86ed-4481-8d24-9ec75e751bd0" alt="Logo" width="580" height="586">
 
 
