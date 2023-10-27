@@ -33,7 +33,7 @@ class MancalaTkinterUI(tk.Tk):
             -1: "Bad",
             3: "Possible",
             6: "Good",
-            100: "Certain",
+            100: "BOT ăn chặt",
         }
 
         self.title("Mancala")
@@ -109,7 +109,7 @@ class MancalaTkinterUI(tk.Tk):
 
         self.quit_button = tk.Button(
             master=self.button_selector_frame,
-            text="Quit",
+            text="Thoát",
             padx=self.reference_size // 2,
             pady=self.reference_size // 2,
             font=self.font_med,
@@ -132,28 +132,28 @@ class MancalaTkinterUI(tk.Tk):
         )
         self.whos_turn_label = tk.Label(
             master=self.game_statistics_frame,
-            text="Who's Turn",
+            text="Lượt Hiện Tại",
             padx=self.reference_size // 2,
             pady=self.reference_size // 2,
             font=self.font_med,
         )
         self.ais_chance_label = tk.Label(
             master=self.game_statistics_frame,
-            text="AI's Chance of Winning",
+            text="Cơ hội thắng của AI",
             padx=self.reference_size // 2,
             pady=self.reference_size // 2,
             font=self.font_med,
         )
         self.how_many_pieces_held_label = tk.Label(
             master=self.game_statistics_frame,
-            text="How Many Pieces Held",
+            text="Số đớ trên tay",
             padx=self.reference_size // 2,
             pady=self.reference_size // 2,
             font=self.font_med,
         )
         self.difficulty_scale_label = tk.Label(
             master=self.game_statistics_frame,
-            text="AI Difficulty Slider",
+            text="Set Độ Khó",
             padx=self.reference_size // 2,
             pady=self.reference_size // 2,
             font=self.font_large,
@@ -271,13 +271,13 @@ class MancalaTkinterUI(tk.Tk):
 
         self.player_1_goal_label.config(
             text=self.player_1_goal_label_text.format(
-                player="You" if self.player == "top" else "AI",
+                player="Bạn" if self.player == "top" else "AI",
                 points=self.board["top_score"],
             )
         )
         self.player_2_goal_label.config(
             text=self.player_2_goal_label_text.format(
-                player="You" if self.player == "bot" else "AI",
+                player="Bạn" if self.player == "bot" else "AI",
                 points=self.board["bot_score"],
             )
         )
@@ -300,7 +300,7 @@ class MancalaTkinterUI(tk.Tk):
         if player_type == 1:
             self.player = "top"
             self.ai = "bot"
-            self.whos_turn_value_label_text = "You"
+            self.whos_turn_value_label_text = "Bạn"
 
         if player_type == 2:
             self.player = "bot"
@@ -326,7 +326,7 @@ class MancalaTkinterUI(tk.Tk):
     def choose_move(self, location: str, tile: int):
         #A function ontop of the buttons to allow for the player to select a move
         if (
-            not ("you" in self.whos_turn_value_label_text.lower())
+            not ("bạn" in self.whos_turn_value_label_text.lower())
             or (self.player != location)
             or (self.board[location][tile] == 0)
         ):
@@ -414,7 +414,7 @@ class MancalaTkinterUI(tk.Tk):
 
         if not go_again:
             self.whos_turn_value_label_text = (
-                "You" if self.whos_turn_value_label_text == "AI" else "AI"
+                "Bạn" if self.whos_turn_value_label_text == "AI" else "AI"
             )
 
         self.sync_backend_front_end()
