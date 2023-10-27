@@ -26,10 +26,10 @@ Player 2 is on the bot side and goes second
 # Screenshots
 
       **CONSOLE APP**
-![image](https://github.com/minhnt227/Mancala-AI-Final/assets/120069588/df3f1781-5d30-430b-9744-9910690c7dda)
+<img src="https://github.com/minhnt227/Mancala-AI-Final/assets/120069588/df3f1781-5d30-430b-9744-9910690c7dda)" alt="Logo" width="620" height="820">
 
       **FINAL APP**
-![image](https://github.com/minhnt227/Mancala-AI-Final/assets/120069588/95f36547-bae4-4cbd-b05c-cab539ca0483)
 
+<img src="https://github.com/minhnt227/Mancala-AI-Final/assets/120069588/95f36547-bae4-4cbd-b05c-cab539ca0483" alt="Logo" width="618" height="546">
 
 
