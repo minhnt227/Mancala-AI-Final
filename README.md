@@ -22,7 +22,6 @@ Player 2 is on the bot side and goes second
 - For the console app run ```python .\main.py```
 - For the final app with GUI run ```python .\tk_main.py```
 
-- 
 
 # Screenshots
 
